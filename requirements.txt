@@ -40,6 +40,7 @@ mdurl==0.1.2
 msgpack==1.0.8
 numba==0.59.1
 numpy==1.26.4
+opencv-python
 orjson==3.10.1
 packaging==24.0
 pandas==2.2.2

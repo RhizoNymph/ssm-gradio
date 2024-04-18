@@ -43,9 +43,9 @@ def generate_ssm(audio_data, hop_length_factor, n_chroma, bins_per_octave):
     return S
 
 # Define sliders for the parameters
-hop_length_slider = gr.Slider(minimum=0.5, maximum=2.0, step=0.1, value=1.0, label="Hop Length Factor")
-n_chroma_slider = gr.Slider(minimum=12, maximum=36, step=1, value=36, label="Number of Chroma Bins")
-bins_per_octave_slider = gr.Slider(minimum=36, maximum=108, step=3, value=108, label="Bins Per Octave")
+hop_length_slider = gr.Slider(minimum=0.5, maximum=10.0, step=0.1, value=1.0, label="Hop Length Factor")
+n_chroma_slider = gr.Slider(minimum=12, maximum=100, step=1, value=36, label="Number of Chroma Bins")
+bins_per_octave_slider = gr.Slider(minimum=36, maximum=500, step=3, value=108, label="Bins Per Octave")
 
 iface = gr.Interface(
     fn=generate_ssm,
